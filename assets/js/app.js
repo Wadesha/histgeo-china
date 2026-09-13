@@ -3,7 +3,8 @@
   const D = window.HISTGEO;
   const colorOf = {
     yellow:'#c0392b', dongting:'#16a085', subei:'#2980b9', maowusu:'#d35400', silkroad:'#8e44ad',
-    maritime:'#0e7490', agropastoral:'#65a30d', haihe:'#546e7a', admin:'#be185d', taihu:'#115e59'
+    maritime:'#0e7490', agropastoral:'#65a30d', haihe:'#546e7a', admin:'#be185d', taihu:'#115e59',
+    climate:'#fbbf24', hhlakes:'#38bdf8', migration:'#fb7185', irrigation:'#a78bfa'
   };
 
   // ---- 顶部导航 + 英雄 ----
@@ -84,7 +85,7 @@
 
   // ---- 脚注 ----
   document.getElementById('footEn').textContent = EN.footer || '';
-  document.getElementById('footNote').textContent = D.meta.note + ' 原理取自邹逸麟《中国历史地理概述》；现状数据来自洞庭湖水利事务中心、陕西省林业局、黄河水利委员会、水利部淮河水利史、泉州申遗办/人民网、上海博物馆青龙镇考古、天津市方志与水务资料、新华社等公开资料（2023—2026）。';
+  document.getElementById('footNote').textContent = D.meta.note + ' 原理取自邹逸麟《中国历史地理概述》；现状数据来自洞庭湖水利事务中心、陕西省林业局、黄河水利委员会、水利部淮河水利史、泉州申遗办/人民网、上海博物馆青龙镇考古、天津市方志与水务资料、竺可桢《中国近五千年来气候变迁的初步研究》、《汉书·地理志》与《后汉书·郡国志》、中国人民大学清史研究所古湖研究、国际灌排委员会世界灌溉工程遗产名录、中国南水北调集团与雄安新区公开数据、新华社等公开资料（2023—2026）。';
 
   // ---- 地图引擎 ----
   const mkIcon = (c) => L.divIcon({ className:'', html:
