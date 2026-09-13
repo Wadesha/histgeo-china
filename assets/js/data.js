@@ -12,6 +12,36 @@ window.HISTGEO = {
     note: "本图谱为学习性重构：原理取自原著，现存实例与现状数据来自公开权威资料。坐标为示意值。"
   },
 
+  // 英文层（少量，仅标题与一句话导语）
+  en: {
+    title: "Vanished Landscapes",
+    subtitle: "A visual atlas of China's historical geography — tracing the evidence that still stands on the ground.",
+    sections: { overview: "Overview", numbers: "Key Numbers", map: "All Sites on One Map" },
+    footer: "An educational reconstruction. Principles adapted from Zou Yilin, An Outline of Chinese Historical Geography; current data from public authoritative sources.",
+    themes: {
+      yellow: { name: "The Yellow River: A Suspended River",
+        lead: "The ‘suspended river’ that runs above the city of Kaifeng, and the abandoned Ming–Qing course it left behind." },
+      dongting: { name: "Yunmeng Marsh & Lake Dongting",
+        lead: "A giant marsh silted up; a great lake that rose, then shrank by more than half." },
+      subei: { name: "The Northern Jiangsu Coast",
+        lead: "Seven centuries of Yellow River silt pushed the coast 50–70 km seaward — and drowned an island into a peninsula." },
+      maowusu: { name: "Mu Us Sandy Land & Tongwan City",
+        lead: "A Hun capital once buried by dunes, now ringed by green — desertification reversed." },
+      silkroad: { name: "Silk Road Oases",
+        lead: "Cities abandoned not by war, but by rivers that changed course." },
+      maritime: { name: "Maritime Silk Road Ports",
+        lead: "Quanzhou, Guangzhou, Ningbo — harbour cities that rose and fell with silt, trade and policy." },
+      agropastoral: { name: "The Farming–Pastoral Frontier",
+        lead: "The shifting line between plough and pasture, frozen into the Great Wall." },
+      haihe: { name: "The Haihe River System",
+        lead: "Five rivers made to meet at Tianjin — a fan-shaped system shaped by canals and silt." },
+      admin: { name: "From Junxian to Xingsheng",
+        lead: "Two millennia of administrative divisions — and why today's provincial borders still echo the Yuan." },
+      taihu: { name: "The Taihu Plain",
+        lead: "Three outlet rivers silted up; the water-town landscape was born." }
+    }
+  },
+
   // 全书四大变迁线索（总览）
   threads: [
     { k: "水系", t: "河流与湖泊的游移", d: "黄河下游在华北平原上反复决溢改道；云梦泽淤平、洞庭湖由盛转衰；黄淮海平原湖沼从180余座到所剩无几。" },
