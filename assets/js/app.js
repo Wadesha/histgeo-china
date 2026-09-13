@@ -15,6 +15,12 @@
   document.getElementById('heroTags').innerHTML = D.threads.map(t => `<span>${t.k} · ${t.t}</span>`).join('');
   document.getElementById('heroSrc').textContent = '资料依据：' + D.meta.source;
 
+  // ---- 英文层（少量） ----
+  const EN = D.en || { themes:{} };
+  const enOf = (id) => (EN.themes && EN.themes[id]) || {};
+  document.getElementById('heroEnTitle').textContent = EN.title || '';
+  document.getElementById('heroEnSub').textContent = EN.subtitle || '';
+
   // ---- 总览 ----
   document.getElementById('threads').innerHTML = D.threads.map(t => `
     <div class="thread"><span class="k">${t.k}</span><h3>${t.t}</h3><p>${t.d}</p></div>`).join('');
@@ -31,7 +37,9 @@
         <span class="tag" style="background:${colorOf[t.id]}">${t.tag}</span>
         <h2>${t.title}</h2>
       </div>
+      <p class="en-name">${enOf(t.id).name || ''}</p>
       <p class="lead">${t.lead}</p>
+      <p class="lead-en">${enOf(t.id).lead || ''}</p>
       <div class="cols">
         <div>
           <div class="panel principle">
@@ -75,6 +83,7 @@
     </section>`).join('');
 
   // ---- 脚注 ----
+  document.getElementById('footEn').textContent = EN.footer || '';
   document.getElementById('footNote').textContent = D.meta.note + ' 原理取自邹逸麟《中国历史地理概述》；现状数据来自洞庭湖水利事务中心、陕西省林业局、黄河水利委员会、水利部淮河水利史、泉州申遗办/人民网、上海博物馆青龙镇考古、天津市方志与水务资料、新华社等公开资料（2023—2026）。';
 
   // ---- 地图引擎 ----
