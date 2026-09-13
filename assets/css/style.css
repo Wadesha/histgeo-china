@@ -138,3 +138,22 @@ footer a{color:var(--gold)}
   background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:20px;
   box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.25s;z-index:60}
 .totop.show{opacity:1;pointer-events:auto}
+
+/* ---------- 英文层（少量） ---------- */
+.brand-en{font-family:"EB Garamond",Georgia,serif;font-style:italic;font-size:12px;
+  color:var(--ink-soft);margin-left:8px;letter-spacing:.03em}
+.hero-en{font-family:"EB Garamond",Georgia,serif;font-style:italic;
+  font-size:clamp(18px,3vw,28px);color:#e9d9bd;margin:-4px 0 12px;letter-spacing:.05em}
+.sub-en{font-family:"EB Garamond",Georgia,serif;font-style:italic;
+  font-size:clamp(13px,1.8vw,16px);color:#c3ac8d;margin-top:10px;max-width:720px;line-height:1.6}
+h2 .en{font-family:"EB Garamond",Georgia,serif;font-weight:400;font-style:italic;font-size:15px;
+  color:var(--gold);letter-spacing:.06em;margin-left:12px;vertical-align:middle}
+.theme .en-name{font-family:"EB Garamond",Georgia,serif;font-style:italic;font-size:19px;
+  color:var(--accent);margin:2px 0 4px;letter-spacing:.02em}
+.theme .lead{margin-bottom:8px}
+.lead-en{font-family:"EB Garamond",Georgia,serif;font-style:italic;font-size:14.5px;
+  color:var(--ink-soft);max-width:880px;margin:0 0 22px;line-height:1.6}
+.foot-en{font-family:"EB Garamond",Georgia,serif;font-style:italic;font-size:12.5px;
+  color:#a08f74;max-width:760px;margin:8px auto 0;line-height:1.6}
+@media(max-width:880px){h2 .en{display:block;margin:4px 0 0}}
+
